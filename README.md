@@ -60,3 +60,28 @@ Update the version mentioned in docs/docs/getting_started.md as some users with 
 Merges to master automatically update www.infracost.io
 
 Check that the image loads on https://cards-dev.twitter.com/validator for new blog post URLs
+
+### Attempted to upgrade Docusaurus
+
+```
+npm i @docusaurus/core@latest @docusaurus/mdx-loader@latest @docusaurus/plugin-client-redirects@latest  @docusaurus/plugin-google-gtag@latest @docusaurus/preset-classic@latest @docusaurus/theme-classic@latest @docusaurus/theme-common@latest
+
+```
+
+Then
+
+```
+npm start
+```
+
+Output:
+
+```
+> infracost-docs-using-docusaurus@0.0.0 start
+> docusaurus start
+
+[INFO] Starting the development server...
+[ERROR] Can't format blog post date "Invalid Date"
+[ERROR] Processing of blog source file "2020-08-17-infracost-cloud-costs-for-devs.md" failed.
+[ERROR] RangeError: Invalid time value
+```
