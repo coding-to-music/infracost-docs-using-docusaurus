@@ -70,6 +70,23 @@ npm i @docusaurus/core@latest @docusaurus/mdx-loader@latest @docusaurus/plugin-c
 
 Then
 
+got message about
+
+```
+[INFO] Starting the development server...
+[ERROR] Error: The "gtag" field in themeConfig should now be specified as option for plugin-google-gtag. For preset-classic, simply move themeConfig.gtag to preset options. More information at https://github.com/facebook/docusaurus/pull/5832.
+```
+
+commented out the below section in `docusaurus.config.js`
+
+```
+    // gtag: {
+    //   trackingID: '',
+    //   anonymizeIP: true,
+    // },
+
+```
+
 ```
 npm start
 ```
