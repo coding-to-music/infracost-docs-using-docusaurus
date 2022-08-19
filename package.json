@@ -1,5 +1,5 @@
 {
-  "name": "infracost-docs",
+  "name": "infracost-docs-using-docusaurus",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve"
+    "serve": "docusaurus serve",
+    "mydeploy": "git add . && git commit -m Build && git push"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-beta.9",
@@ -38,5 +39,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Infracost docs built using Docusaurus 2",
+  "main": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infracost/docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infracost/docs/issues"
+  },
+  "homepage": "https://github.com/infracost/docs#readme"
 }
